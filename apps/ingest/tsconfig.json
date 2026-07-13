@@ -1,0 +1,9 @@
+{
+  "extends": "@slipstream/typescript-config/base.json",
+  "compilerOptions": {
+    "composite": true,
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["src/**/*.ts"]
+}
