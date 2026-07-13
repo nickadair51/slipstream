@@ -1,0 +1,29 @@
+{
+  "name": "slipstream",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.12.0",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "build": "pnpm --recursive --if-present build",
+    "check": "pnpm lint && pnpm typecheck && pnpm test",
+    "dev:web": "pnpm --filter @slipstream/web dev",
+    "dev:ingest": "pnpm --filter @slipstream/ingest dev",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "test": "pnpm --recursive --if-present test",
+    "typecheck": "pnpm --recursive --if-present typecheck"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "eslint": "9.39.2",
+    "eslint-config-next": "16.2.10",
+    "globals": "17.7.0",
+    "prettier": "3.9.5",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.63.0"
+  }
+}
