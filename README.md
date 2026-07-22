@@ -47,3 +47,6 @@ packages/typescript-config Shared strict TypeScript configuration
 
 Slipstream displays public aircraft data neutrally. It does not provide
 military-specific detection, filtering, or analysis features.
+
+Aircraft data is provided by [adsb.fi](https://adsb.fi/) and is subject to its
+personal, non-commercial-use terms.
